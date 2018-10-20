@@ -17,8 +17,6 @@ public class LoginComponent : MonoBehaviour {
 		};
 
 		StartCoroutine(LoginAPI(loginData, res => {
-			print(res.downloadHandler.text);
-
 			if (res.downloadHandler.text != null && res.responseCode == 200) {
 
 				var userData = JsonUtility.FromJson<UserData>(res.downloadHandler.text);
@@ -29,13 +27,12 @@ public class LoginComponent : MonoBehaviour {
 
 				SceneManager.LoadScene("MainPage");
 			}
-
 		}));
 	}
 
 	private static IEnumerator LoginAPI(LoginData loginData, Action<UnityWebRequest> callBack) {
 		var request = new UnityWebRequest($"{API_Config.URL()}/users/login", "POST");
-		byte[] bodyRaw = new System.Text.UTF8Encoding().GetBytes(JsonUtility.ToJson(loginData));
+		var bodyRaw = new System.Text.UTF8Encoding().GetBytes(JsonUtility.ToJson(loginData));
 		request.uploadHandler = new UploadHandlerRaw(bodyRaw);
 		request.downloadHandler = new DownloadHandlerBuffer();
 		request.SetRequestHeader("Content-Type", "application/json");

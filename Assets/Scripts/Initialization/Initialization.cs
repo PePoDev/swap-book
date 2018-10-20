@@ -4,8 +4,10 @@ using UnityEngine.SceneManagement;
 public class Initialization : MonoBehaviour {
 
 	private void Start () {
-
-
-		SceneManager.LoadScene(1);
+		if (PlayerPrefs.HasKey("token")) {
+			SceneManager.LoadScene("MainPage");
+		} else {
+			SceneManager.LoadScene("Login");
+		}
 	}
 }
