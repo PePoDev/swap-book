@@ -209,66 +209,6 @@ MonoBehaviour:
   - FavParams: 0
     FavString: []
     list:
-    - {fileID: 553260695}
-    ActiveGameObject: {fileID: 553260695}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
-    - {fileID: 2020390905}
-    ActiveGameObject: {fileID: 2020390905}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
-    - {fileID: 1337908881}
-    ActiveGameObject: {fileID: 1337908881}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
-    - {fileID: 781309745}
-    ActiveGameObject: {fileID: 781309745}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
-    - {fileID: 1528104129}
-    ActiveGameObject: {fileID: 1528104129}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
     - {fileID: 0}
     ActiveGameObject: {fileID: 0}
     GUIDsList: []
@@ -293,8 +233,104 @@ MonoBehaviour:
   - FavParams: 0
     FavString: []
     list:
+    - {fileID: 1337908881}
+    ActiveGameObject: {fileID: 1337908881}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 0}
+    ActiveGameObject: {fileID: 0}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 0}
+    ActiveGameObject: {fileID: 0}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
     - {fileID: 115495555}
     ActiveGameObject: {fileID: 115495555}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 553260695}
+    ActiveGameObject: {fileID: 553260695}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 911660181}
+    ActiveGameObject: {fileID: 911660181}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 2020390905}
+    ActiveGameObject: {fileID: 2020390905}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 781309745}
+    ActiveGameObject: {fileID: 781309745}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 0}
+    ActiveGameObject: {fileID: 0}
     GUIDsList: []
     GUIDsActiveGameObject: 
     PATHsList: []
@@ -414,7 +450,9 @@ MonoBehaviour:
   _initialized: 1
   _reset: 0
   _version: 1.1.1
+  _versionInt: -1
   _moved: 0
+  _dirty: 0
   _blocks:
   - {fileID: 553260701}
   - {fileID: 553260704}
@@ -462,7 +500,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 553260699}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1133730059}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &553260699
@@ -513,12 +562,15 @@ MonoBehaviour:
   _initialized: 1
   _reset: 0
   _version: 1.1.1
+  _versionInt: -1
   _moved: 0
+  _dirty: 0
   _foldout: 1
   _drawSeparator: 0
   enabledInEditor: 1
   container: {fileID: 553260697}
   editor: {fileID: 0}
+  _rootContainer: {fileID: 0}
   _id: On Click
   _actions:
   - {fileID: 553260705}
@@ -529,9 +581,15 @@ MonoBehaviour:
   _showSettings: 1
   _actionsFoldout: 1
   _ignorePause: 0
+  _restart: 0
+  <finished>k__BackingField: 0
+  <executionCount>k__BackingField: 0
   _listeningRange: 0
   _listeningTarget: {fileID: 553260695}
   _listeningList: {fileID: 0}
+  sourceParam: {fileID: 0}
+  positionParam: {fileID: 0}
+  _controllers: []
 --- !u!114 &553260702
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -546,12 +604,15 @@ MonoBehaviour:
   _initialized: 1
   _reset: 0
   _version: 1.1.1
+  _versionInt: -1
   _moved: 0
+  _dirty: 0
   _foldout: 0
   _drawSeparator: 0
   enabledInEditor: 1
   container: {fileID: 553260701}
   editor: {fileID: 0}
+  _rootContainer: {fileID: 0}
   _id: Source
   _dataType: 8
   _typeName: UnityEngine.GameObject
@@ -565,12 +626,15 @@ MonoBehaviour:
   _defaultVector3Value: {x: 0, y: 0, z: 0}
   _defaultVector4Value: {x: 0, y: 0, z: 0, w: 0}
   _defaultRectValue:
-    serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  _defaultColorValue: {r: 0, g: 0, b: 0, a: 0}
+  _defaultColorValue:
+    r: 0
+    g: 0
+    b: 0
+    a: 0
   _defaultEnumIntValue: 0
   _defaultBoundsValue:
     m_Center: {x: 0, y: 0, z: 0}
@@ -583,12 +647,15 @@ MonoBehaviour:
   _vector2Value: {x: 0, y: 0}
   _vector3Value: {x: 0, y: 0, z: 0}
   _rectValue:
-    serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  _colorValue: {r: 0, g: 0, b: 0, a: 1}
+  _colorValue:
+    r: 0
+    g: 0
+    b: 0
+    a: 1
   _objectValue: {fileID: 0}
   _enumIntValue: 0
   _enumCached: 0
@@ -598,7 +665,6 @@ MonoBehaviour:
   _quaternionValue: {x: 0, y: 0, z: 0, w: 1}
   _vector4Value: {x: 0, y: 0, z: 0, w: 0}
   _animationCurveValue:
-    serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -611,6 +677,7 @@ MonoBehaviour:
   _showDescription: 1
   _description: The GameObject where the event was originated.
   _changeListeners: []
+  _stamp: 0
   _hidden: 0
   _display: 1
   _label: Parameter
@@ -628,12 +695,15 @@ MonoBehaviour:
   _initialized: 1
   _reset: 0
   _version: 1.1.1
+  _versionInt: -1
   _moved: 0
+  _dirty: 0
   _foldout: 0
   _drawSeparator: 0
   enabledInEditor: 1
   container: {fileID: 553260701}
   editor: {fileID: 0}
+  _rootContainer: {fileID: 0}
   _id: Position
   _dataType: 4
   _typeName: 
@@ -647,12 +717,15 @@ MonoBehaviour:
   _defaultVector3Value: {x: 0, y: 0, z: 0}
   _defaultVector4Value: {x: 0, y: 0, z: 0, w: 0}
   _defaultRectValue:
-    serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  _defaultColorValue: {r: 0, g: 0, b: 0, a: 0}
+  _defaultColorValue:
+    r: 0
+    g: 0
+    b: 0
+    a: 0
   _defaultEnumIntValue: 0
   _defaultBoundsValue:
     m_Center: {x: 0, y: 0, z: 0}
@@ -665,12 +738,15 @@ MonoBehaviour:
   _vector2Value: {x: 0, y: 0}
   _vector3Value: {x: 0, y: 0, z: 0}
   _rectValue:
-    serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  _colorValue: {r: 0, g: 0, b: 0, a: 1}
+  _colorValue:
+    r: 0
+    g: 0
+    b: 0
+    a: 1
   _objectValue: {fileID: 0}
   _enumIntValue: 0
   _enumCached: 0
@@ -680,7 +756,6 @@ MonoBehaviour:
   _quaternionValue: {x: 0, y: 0, z: 0, w: 1}
   _vector4Value: {x: 0, y: 0, z: 0, w: 0}
   _animationCurveValue:
-    serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -693,6 +768,7 @@ MonoBehaviour:
   _showDescription: 1
   _description: The current screen coordinates of the pointer.
   _changeListeners: []
+  _stamp: 0
   _hidden: 0
   _display: 1
   _label: Parameter
@@ -710,12 +786,15 @@ MonoBehaviour:
   _initialized: 1
   _reset: 0
   _version: 1.1.1
+  _versionInt: -1
   _moved: 0
+  _dirty: 0
   _foldout: 1
   _drawSeparator: 0
   enabledInEditor: 1
   container: {fileID: 553260697}
   editor: {fileID: 0}
+  _rootContainer: {fileID: 0}
   _id: TextComponent
   _dataType: 8
   _typeName: UnityEngine.UI.Text
@@ -729,12 +808,15 @@ MonoBehaviour:
   _defaultVector3Value: {x: 0, y: 0, z: 0}
   _defaultVector4Value: {x: 0, y: 0, z: 0, w: 0}
   _defaultRectValue:
-    serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  _defaultColorValue: {r: 0, g: 0, b: 0, a: 0}
+  _defaultColorValue:
+    r: 0
+    g: 0
+    b: 0
+    a: 0
   _defaultEnumIntValue: 0
   _defaultBoundsValue:
     m_Center: {x: 0, y: 0, z: 0}
@@ -747,12 +829,15 @@ MonoBehaviour:
   _vector2Value: {x: 0, y: 0}
   _vector3Value: {x: 0, y: 0, z: 0}
   _rectValue:
-    serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  _colorValue: {r: 0, g: 0, b: 0, a: 1}
+  _colorValue:
+    r: 0
+    g: 0
+    b: 0
+    a: 1
   _objectValue: {fileID: 2020390907}
   _enumIntValue: 0
   _enumCached: 0
@@ -762,7 +847,6 @@ MonoBehaviour:
   _quaternionValue: {x: 0, y: 0, z: 0, w: 1}
   _vector4Value: {x: 0, y: 0, z: 0, w: 0}
   _animationCurveValue:
-    serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -775,6 +859,7 @@ MonoBehaviour:
   _showDescription: 0
   _description: <Description>
   _changeListeners: []
+  _stamp: 0
 --- !u!114 &553260705
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -789,19 +874,27 @@ MonoBehaviour:
   _initialized: 1
   _reset: 0
   _version: 1.1.1
+  _versionInt: -1
   _moved: 0
+  _dirty: 0
   _foldout: 1
   _drawSeparator: 0
   enabledInEditor: 1
   container: {fileID: 553260701}
   editor: {fileID: 0}
+  _rootContainer: {fileID: 0}
   _caption: Set Text Property
   _breakpoint: 0
+  <executionCount>k__BackingField: 0
   _target: {fileID: 0}
   _targetVar: {fileID: 553260704}
   _property: 13
   _alignmentValue: 0
-  _colorValue: {r: 1, g: 1, b: 1, a: 1}
+  _colorValue:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   _fontValue: {fileID: 0}
   _fontSizeValue: 0
   _fontStyleValue: 0
@@ -893,6 +986,46 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 781309745}
   m_CullTransparentMesh: 0
+--- !u!1 &911660181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 911660183}
+  - component: {fileID: 911660182}
+  m_Layer: 0
+  m_Name: LoginComponent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &911660182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 911660181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d4d1e034be41884f92c9945cf43269f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &911660183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 911660181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1133730059
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,8 +1058,8 @@ Camera:
   m_GameObject: {fileID: 1133730059}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0.990566, b: 0.7477905, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0.45003754, b: 0.99215686, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -954,7 +1087,7 @@ Camera:
   m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
+  m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!4 &1133730062
@@ -1065,46 +1198,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1528104129
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1528104131}
-  - component: {fileID: 1528104130}
-  m_Layer: 0
-  m_Name: InitialOneSignal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1528104130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1528104129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cd62d8a805186428e26b31c8f8e82a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1528104131
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1528104129}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2020390905
 GameObject:
   m_ObjectHideFlags: 0
