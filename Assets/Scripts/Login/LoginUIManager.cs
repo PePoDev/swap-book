@@ -3,15 +3,16 @@ using UnityEngine;
 
 public class LoginUIManager : MonoBehaviour {
 
+	private float timeToCloseApp = 0;
+	private bool isSigninShowed = false;
+	private bool isSignupShowed = false;
+	private bool isForgotShowed = false;
+
 	public float SpeedToAnimate = 0.7f;
 
 	public float LogoPositionInSignin;
 	public float LogoPositionInSignup;
 	public float LogoPositionInForgot;
-
-	private bool isSigninShowed = false;
-	private bool isSignupShowed = false;
-	private bool isForgotShowed = false;
 
 	public RectTransform AppLogo;
 	public RectTransform GroupSignin;
@@ -20,7 +21,7 @@ public class LoginUIManager : MonoBehaviour {
 
 	#region AnimateUI
 	public void AnimateSignUpGroup() {
-		AppLogo.DOAnchorPosY(LogoPositionInSignup, SpeedToAnimate - 0.3f);
+		AppLogo.DOAnchorPosY(LogoPositionInSignup, SpeedToAnimate);
 		ToggleSignin();
 		ToggleSignup();
 	}
@@ -75,8 +76,19 @@ public class LoginUIManager : MonoBehaviour {
 	private void Update() {
 
 		// Animate to Sign in.
-		if (Input.GetKeyDown(KeyCode.Escape)) {
+		if (Input.GetKeyDown(KeyCode.Escape) && GroupSignin.localPosition.x != 0) {
 			AnimateSigninGroup();
+		}
+
+		if (timeToCloseApp > (Time.time - 1.2f)) {
+			if (Input.GetKeyDown(KeyCode.Escape)) {
+				Application.Quit();
+			}
+		} else {
+			if (Input.GetKeyDown(KeyCode.Escape)) {
+				timeToCloseApp = Time.time;
+
+			}
 		}
 	}
 }

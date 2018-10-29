@@ -293,8 +293,8 @@ GameObject:
   m_Component:
   - component: {fileID: 51535945}
   - component: {fileID: 51535944}
-  - component: {fileID: 51535947}
   - component: {fileID: 51535946}
+  - component: {fileID: 51535947}
   m_Layer: 0
   m_Name: API_Component
   m_TagString: Untagged
@@ -339,6 +339,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f984c15bfd66b1946a07cbd3f8bc9761, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Username: {fileID: 2074722136}
+  Fullname: {fileID: 89908261}
+  Email: {fileID: 1605707416}
+  Password: {fileID: 1534457203}
+  RePassword: {fileID: 45755697}
 --- !u!114 &51535947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,7 +355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45f69715d4d19d43b87fdc6f0f66baf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IF_Email: {fileID: 0}
+  IF_Email: {fileID: 517292157}
 --- !u!1 &57507489
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,13 +507,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 89908262}
   m_TextComponent: {fileID: 150300775}
   m_Placeholder: {fileID: 819148525}
-  m_ContentType: 7
-  m_InputType: 2
+  m_ContentType: 5
+  m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 6
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 4
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -1043,7 +1048,7 @@ GameObject:
   m_Layer: 5
   m_Name: Button:SignUp
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1105,9 +1110,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SetTrigger
-        m_Mode: 5
+      - m_Target: {fileID: 51535946}
+        m_MethodName: Signup
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1316,7 +1321,7 @@ GameObject:
   m_Layer: 5
   m_Name: Button:ResetPassword
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1378,9 +1383,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SetTrigger
-        m_Mode: 5
+      - m_Target: {fileID: 51535947}
+        m_MethodName: ForgotPassword
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1576,13 +1581,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 517292158}
   m_TextComponent: {fileID: 57507491}
   m_Placeholder: {fileID: 974616717}
-  m_ContentType: 7
-  m_InputType: 2
+  m_ContentType: 6
+  m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 7
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 5
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -1813,7 +1818,7 @@ GameObject:
   m_Layer: 5
   m_Name: Button:Sign in
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1875,9 +1880,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SetTrigger
-        m_Mode: 5
+      - m_Target: {fileID: 51535944}
+        m_MethodName: Login
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2141,7 +2146,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Username
+  m_Text: Full name
 --- !u!222 &819148526
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2215,7 +2220,7 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 769964973}
   m_PlaneDistance: 100
-  m_PixelPerfect: 1
+  m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -2409,7 +2414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7b079cafb7f344f94d1fa7a430abd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedToAnimate: 0.9
+  SpeedToAnimate: 0.2
   LogoPositionInSignin: 403
   LogoPositionInSignup: 1029
   LogoPositionInForgot: 226
@@ -3152,8 +3157,68 @@ MonoBehaviour:
   - FavParams: 0
     FavString: []
     list:
-    - {fileID: 1515496419}
-    ActiveGameObject: {fileID: 1515496419}
+    - {fileID: 1498976984}
+    ActiveGameObject: {fileID: 1498976984}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 507437548}
+    ActiveGameObject: {fileID: 507437548}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 650466257}
+    ActiveGameObject: {fileID: 650466257}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 428492069}
+    ActiveGameObject: {fileID: 428492069}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 1120384595}
+    ActiveGameObject: {fileID: 1120384595}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 7123612}
+    ActiveGameObject: {fileID: 7123612}
     GUIDsList: []
     GUIDsActiveGameObject: 
     PATHsList: []
@@ -3166,6 +3231,128 @@ MonoBehaviour:
     list:
     - {fileID: 884755435}
     ActiveGameObject: {fileID: 884755435}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 858977643}
+    ActiveGameObject: {fileID: 858977643}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 51535943}
+    ActiveGameObject: {fileID: 51535943}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 2074722134}
+    ActiveGameObject: {fileID: 2074722134}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 517292155}
+    ActiveGameObject: {fileID: 517292155}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 89908259}
+    ActiveGameObject: {fileID: 89908259}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 1605707414}
+    ActiveGameObject: {fileID: 1605707414}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 1534457201}
+    ActiveGameObject: {fileID: 1534457201}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 819148523}
+    ActiveGameObject: {fileID: 819148523}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 45755695}
+    - {fileID: 1605707414}
+    - {fileID: 1534457201}
+    ActiveGameObject: {fileID: 45755695}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    PATHsList: []
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list:
+    - {fileID: 1515496419}
+    ActiveGameObject: {fileID: 1515496419}
     GUIDsList: []
     GUIDsActiveGameObject: 
     PATHsList: []
@@ -3200,32 +3387,8 @@ MonoBehaviour:
   - FavParams: 0
     FavString: []
     list:
-    - {fileID: 7123612}
-    ActiveGameObject: {fileID: 7123612}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
     - {fileID: 1650835473}
     ActiveGameObject: {fileID: 1650835473}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
-    - {fileID: 1498976984}
-    ActiveGameObject: {fileID: 1498976984}
     GUIDsList: []
     GUIDsActiveGameObject: 
     PATHsList: []
@@ -3260,18 +3423,6 @@ MonoBehaviour:
   - FavParams: 0
     FavString: []
     list:
-    - {fileID: 507437548}
-    ActiveGameObject: {fileID: 507437548}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
     - {fileID: 399186692}
     ActiveGameObject: {fileID: 399186692}
     GUIDsList: []
@@ -3284,162 +3435,8 @@ MonoBehaviour:
   - FavParams: 0
     FavString: []
     list:
-    - {fileID: 428492069}
-    - {fileID: 1605707414}
-    - {fileID: 1120384595}
-    - {fileID: 2074722134}
-    - {fileID: 89908259}
-    - {fileID: 1534457201}
-    - {fileID: 45755695}
-    ActiveGameObject: {fileID: 1120384595}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
-    - {fileID: 428492069}
-    ActiveGameObject: {fileID: 428492069}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
     - {fileID: 885783728}
     ActiveGameObject: {fileID: 885783728}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
-    - {fileID: 808497595}
-    ActiveGameObject: {fileID: 808497595}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
-    - {fileID: 1534457201}
-    ActiveGameObject: {fileID: 1534457201}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
-    - {fileID: 45755695}
-    ActiveGameObject: {fileID: 45755695}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
-    - {fileID: 1605707414}
-    - {fileID: 89908259}
-    ActiveGameObject: {fileID: 89908259}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
-    - {fileID: 253451468}
-    ActiveGameObject: {fileID: 253451468}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
-    - {fileID: 1605707414}
-    - {fileID: 2074722134}
-    - {fileID: 89908259}
-    ActiveGameObject: {fileID: 2074722134}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
-    - {fileID: 1605707414}
-    ActiveGameObject: {fileID: 1605707414}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
-    - {fileID: 0}
-    - {fileID: 0}
-    ActiveGameObject: {fileID: 0}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
-    - {fileID: 1382334367}
-    ActiveGameObject: {fileID: 1382334367}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    PATHsList: []
-    PATHsActiveGameObject: 
-    InstanceID: 0
-    wasInit: 0
-    CashedBool: 0
-  - FavParams: 0
-    FavString: []
-    list:
-    - {fileID: 650466257}
-    ActiveGameObject: {fileID: 650466257}
     GUIDsList: []
     GUIDsActiveGameObject: 
     PATHsList: []
@@ -4016,13 +4013,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1605707417}
   m_TextComponent: {fileID: 1964487676}
   m_Placeholder: {fileID: 169731623}
-  m_ContentType: 7
-  m_InputType: 2
+  m_ContentType: 6
+  m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 7
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 5
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -4483,8 +4480,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2074722137}
   m_TextComponent: {fileID: 1911637894}
   m_Placeholder: {fileID: 1382334369}
-  m_ContentType: 7
-  m_InputType: 2
+  m_ContentType: 0
+  m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
