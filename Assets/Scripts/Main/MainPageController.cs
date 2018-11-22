@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainPageController : MonoBehaviour {
 
+	public Image BookPicture;
+
+	private MainPage_UIManager UIManager;
 	private float timeToCloseApp = 0;
 
 	private void Start() {
-
+		UIManager = GameObject.Find("MainPage_UIManager").GetComponent<MainPage_UIManager>();
 	}
 
 	private void Update() {
@@ -35,13 +39,8 @@ public class MainPageController : MonoBehaviour {
 	}
 
 	public void OnClick_BookItem(int bookId) {
-		AndroidNativeFunctions.ShowAlert("Book Touched",
-					"",
-					"Got it", "", "",
-					(action) => {
-						print("Hello adb !");
-					}
-		);
+		//BookPicture.sprite = new Sprite();
+		UIManager.ShowBookDetail();
 	}
 
 	public void OnClick_Account(int bookId) {

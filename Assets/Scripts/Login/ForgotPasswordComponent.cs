@@ -19,8 +19,6 @@ public class ForgotPasswordComponent : MonoBehaviour {
 					}
 		);
 
-		return;
-
 		if (IF_Email.text != null) {
 			AndroidNativeFunctions.ShowAlert("We will send email to you, please confirm",
 					"Please follow instructer to reset your password",

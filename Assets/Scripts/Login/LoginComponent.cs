@@ -23,8 +23,6 @@ public class LoginComponent : MonoBehaviour {
 
 		SceneManager.LoadScene("MainPage");
 
-		return;
-
 		var loginData = new LoginData() {
 			email = IF_Username.text,
 			password = IF_Password.text

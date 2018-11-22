@@ -33,4 +33,12 @@ public class MainPage_UIManager : MonoBehaviour {
 					}
 		);
 	}
+
+	public void ShowBookDetail() {
+		PageItem[4].DOAnchorPosX(0, speed);
+	}
+
+	public void HideBookDetail() {
+		PageItem[4].DOAnchorPosX(1925, speed);
+	}
 }

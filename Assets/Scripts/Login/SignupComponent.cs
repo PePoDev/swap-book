@@ -25,8 +25,6 @@ public class SignupComponent : MonoBehaviour {
 					}
 		);
 
-		return;
-
 		if (Password.text != RePassword.text) {
 			
 		}
