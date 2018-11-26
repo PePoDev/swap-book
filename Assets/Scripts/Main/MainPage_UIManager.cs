@@ -25,20 +25,45 @@ public class MainPage_UIManager : MonoBehaviour {
 	}
 
 	public void OnClick_MenuButton() {
-		AndroidNativeFunctions.ShowAlert("ยังไม่ได้ทำ สัส",
-					"ท่ดๆ แมวพิมพ์",
-					"Got it", "", "",
-					(action) => {
-						print("Hello adb !");
-					}
-		);
+		
 	}
 
 	public void ShowBookDetail() {
 		PageItem[4].DOAnchorPosX(0, speed);
 	}
-
 	public void HideBookDetail() {
 		PageItem[4].DOAnchorPosX(1925, speed);
+	}
+	public void OnClick_Offer() {
+		PageItem[5].DOAnchorPosX(0, speed);
+		HideBookDetail();
+	}
+	public void HideSelectBook() {
+		PageItem[5].DOAnchorPosX(1925, speed);
+	}
+	public void ShowDialog() {
+		HideSelectBook();
+		PageItem[6].gameObject.SetActive(true);
+	}
+	public void HideDialog() {
+		PageItem[6].gameObject.SetActive(false);
+	}
+	public void ShowConfirmation() {
+		PageItem[7].DOAnchorPosX(0, speed);
+	}
+	public void HideConfirmation() {
+		PageItem[7].DOAnchorPosX(1925, speed);
+	}
+	public void ShowAddNew() {
+		PageItem[8].DOAnchorPosX(0, speed);
+	}
+	public void HideAddNew() {
+		PageItem[8].DOAnchorPosX(1925, speed);
+	}
+	public void ShowReceipt() {
+		PageItem[9].DOAnchorPosX(0, speed);
+	}
+	public void HideReceipt() {
+		PageItem[9].DOAnchorPosX(1925, speed);
 	}
 }

@@ -11,7 +11,9 @@ TrueTypeFontImporter:
   fontName: SF Pro Display
   fontNames:
   - SF Pro Display
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4acf83d175357bf42802d7bf49252837, type: 3}
+  - {fileID: 12800000, guid: a4f0ed0d61b050843a79fcc24d7e7728, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

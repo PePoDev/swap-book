@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 16
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1591780113, guid: 047d1e7095897b14191324e566a14ff9, type: 3}
+  m_Name: ProjectDescriptionHelper
+  m_EditorClassIdentifier: 
+  pluginID: 1
+  Hash_HierarchyCache: []
+  Hash_BookMarks:
+  - ColorValue_R: 0.18431373
+    ColorValue_G: 0.29411766
+    ColorValue_B: 0.44705883
+    ColorValue_A: 0.18431373
+    SKIP_COLOR: 0
+    NO_EXPAND_ITEMS: 0
+    name: Default
+    array: []
+    FavParams: 0
+    InstanceID: -173640911
+    Hierarchy_ScrollY: 0
+    Window_ScrollY: 0
+    ColabsedItems: 3173a6f5ffffffff
+    Windows_ColabsedItems: 
+  _mFavoritCategorySelected: 0
+  Hash1: []
+  Hash1_Fix2_0: []
+  Hash2: []
+  Hash3:
+  - FavParams: 0
+    FavString: []
+    list: []
+    ActiveGameObject: {fileID: 0}
+    GUIDsList:
+    - ba40eb5920e204712be87e99408b45a7
+    GUIDsActiveGameObject: ba40eb5920e204712be87e99408b45a7
+    PATHsList:
+    - 
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list: []
+    ActiveGameObject: {fileID: 0}
+    GUIDsList:
+    - 0725aad9b09a64aa48b04f4b18638995
+    GUIDsActiveGameObject: 0725aad9b09a64aa48b04f4b18638995
+    PATHsList:
+    - 
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list: []
+    ActiveGameObject: {fileID: 0}
+    GUIDsList:
+    - 6c6d60a81af56d4428f74b2db7bf4dc9
+    GUIDsActiveGameObject: 6c6d60a81af56d4428f74b2db7bf4dc9
+    PATHsList:
+    - 
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list: []
+    ActiveGameObject: {fileID: 0}
+    GUIDsList:
+    - e88fbcbfec2704d7abfce753e323b133
+    GUIDsActiveGameObject: e88fbcbfec2704d7abfce753e323b133
+    PATHsList:
+    - 
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list: []
+    ActiveGameObject: {fileID: 0}
+    GUIDsList:
+    - f084120be11134fb8a19a1d86e13f2ee
+    GUIDsActiveGameObject: f084120be11134fb8a19a1d86e13f2ee
+    PATHsList:
+    - 
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list: []
+    ActiveGameObject: {fileID: 0}
+    GUIDsList:
+    - 4a8e2d3817f014bf3937ba79776b5269
+    GUIDsActiveGameObject: 4a8e2d3817f014bf3937ba79776b5269
+    PATHsList:
+    - 
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list: []
+    ActiveGameObject: {fileID: 0}
+    GUIDsList:
+    - eababfe618c7144dbb2b12c143fbbd29
+    GUIDsActiveGameObject: eababfe618c7144dbb2b12c143fbbd29
+    PATHsList:
+    - 
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  - FavParams: 0
+    FavString: []
+    list: []
+    ActiveGameObject: {fileID: 0}
+    GUIDsList:
+    - ea4c59803ae2b41eaafd0a96f58b4145
+    GUIDsActiveGameObject: ea4c59803ae2b41eaafd0a96f58b4145
+    PATHsList:
+    - 
+    PATHsActiveGameObject: 
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0
+  Hash4: []
+  Hash5: []
+  Hash5_Fix2_0: []
+  Hash6: []
+  Hash7: []
+  Hash7_Fix2_0: []
+  Hash8: []
+  Hash9: []
+  Hash10: []
+  _enableRegistrator: 0
+  m_GetHash_IconImageKey:
+  - go: {fileID: 0}
+    guid: 4f7b50bf57d1f754c947d7c301af14dd
+    path: Assets/Plugins
+  m_GetHash_IconImageValue:
+  - FavParams: 0
+    FavString: []
+    list: []
+    ActiveGameObject: {fileID: 0}
+    GUIDsList: []
+    GUIDsActiveGameObject: 1940d16f3f4504c4e8905f0924903e90
+    PATHsList: []
+    PATHsActiveGameObject: Assets/Plugins/EModules/Hierarchy/Icons/Hi_favorite.png
+    InstanceID: 0
+    wasInit: 0
+    CashedBool: 0

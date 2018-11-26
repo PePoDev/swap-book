@@ -3,6 +3,6 @@ using System;
 
 [Serializable]
 public class LoginData {
-	public string email;
+	public string login;
 	public string password;
 }

@@ -2,8 +2,9 @@
 
 [Serializable]
 public class SignupData {
-	public string id;
+	public string name;
 	public string username;
 	public string email;
 	public string password;
+	public string telephone;
 }

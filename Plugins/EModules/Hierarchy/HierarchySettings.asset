@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 16
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 9636717, guid: ac5f4bfb0f5a3894a80a58e0d2c29aa9, type: 3}
+  m_Name: HierarchySettings
+  m_EditorClassIdentifier: 
+  pluginID: 0
+  last_scenesV2:
+  - guid: c3c1d2e6585c8654ca285fbf17d16b27
+    pin: 0
+    path: Assets/Scenes/MainPage.unity
+    additional_guid: []
+    additional_path: []
+  - guid: 15d903373ff8e124d8b629ce3ac55717
+    pin: 0
+    path: Assets/Scenes/Login.unity
+    additional_guid: []
+    additional_path: []
+  - guid: db453465e8b20f145ad06cba373712f9
+    pin: 0
+    path: Assets/Scenes/Initialization.unity
+    additional_guid: []
+    additional_path: []
+  - guid: 696bf95a483037a41bbac3de0ab16a04
+    pin: 0
+    path: Assets/AndroidNativeFunctions/demo/demo.unity
+    additional_guid: []
+    additional_path: []
+  - guid: 8d9b30d021859451684dc56fef220bde
+    pin: 0
+    path: Assets/Plugins/AndroidDialogAndToast/TestScene/TestScene.unity
+    additional_guid: []
+    additional_path: []
+  - guid: 71ec6a3549bb99c4699e9e29810d0c9a
+    pin: 0
+    path: Assets/LeanLocalization/Examples/Hello And Flag.unity
+    additional_guid: []
+    additional_path: []
+  - guid: c6d5ea7ef3b20074cb4d3271525a78a6
+    pin: 0
+    path: Assets/LeanLocalization/Examples/Formatted Text.unity
+    additional_guid: []
+    additional_path: []
+  - guid: 8166101bdfd7cc7419ee366b7e0c5c68
+    pin: 0
+    path: Assets/LeanLocalization/Examples/TextAsset Loaders.unity
+    additional_guid: []
+    additional_path: []
+  - guid: 36b1b03fad1829748bc0266fd1e356ca
+    pin: 0
+    path: Assets/LeanLocalization/Examples/TextAsset Multi Loader.unity
+    additional_guid: []
+    additional_path: []
+  - guid: 2cda990e2423bbf4892e6590ba056729
+    pin: 0
+    path: Assets/Scenes/Login.unity
+    additional_guid: []
+    additional_path: []
+  - guid: b723c263aa43f5a4282436cb05441ab0
+    pin: 0
+    path: Assets/Modern UI Pack/Scenes/Demo.unity
+    additional_guid: []
+    additional_path: []
+  last_scenes: []
+  m_hiddenComponents: []
+  modulesParamsType:
+  - EModules.EModulesInternal.Hierarchy+M_SetActive
+  - EModules.EModulesInternal.Adapter+M_Colors
+  - EModules.EModulesInternal.Hierarchy+M_Warning
+  - EModules.EModulesInternal.Hierarchy+M_Freeze
+  - EModules.EModulesInternal.Hierarchy+M_PrefabApply
+  - EModules.EModulesInternal.Hierarchy+M_Vertices
+  - EModules.EModulesInternal.Hierarchy+M_Audio
+  - EModules.EModulesInternal.Hierarchy+M_Tag
+  - EModules.EModulesInternal.Hierarchy+M_Layers
+  - EModules.EModulesInternal.Hierarchy+M_CustomIcons
+  - EModules.EModulesInternal.Hierarchy+M_Descript
+  - EModules.EModulesInternal.Hierarchy+M_SpritesOrder
+  - EModules.EModulesInternal.Hierarchy+M_PlayModeKeeper
+  - EModules.EModulesInternal.M_UserModulesRoot_Slot1
+  - EModules.EModulesInternal.M_UserModulesRoot_Slot2
+  - EModules.EModulesInternal.M_UserModulesRoot_Slot3
+  - EModules.EModulesInternal.M_UserModulesRoot_Slot4
+  - EModules.EModulesInternal.M_UserModulesRoot_Slot5
+  - EModules.EModulesInternal.M_UserModulesRoot_Slot6
+  - EModules.EModulesInternal.M_UserModulesRoot_Slot7
+  - EModules.EModulesInternal.M_UserModulesRoot_Slot8
+  - EModules.EModulesInternal.M_UserModulesRoot_Slot9
+  modulesParamsClass:
+  - enable: 1
+    sib: -1
+    width: 16
+  - enable: 1
+    sib: -1
+    width: 16
+  - enable: 1
+    sib: -1
+    width: 16
+  - enable: 0
+    sib: 0
+    width: 16
+  - enable: 0
+    sib: 1
+    width: 16
+  - enable: 0
+    sib: 2
+    width: 32
+  - enable: 0
+    sib: 3
+    width: 16
+  - enable: 0
+    sib: 4
+    width: 48
+  - enable: 0
+    sib: 5
+    width: 48
+  - enable: 1
+    sib: 6
+    width: 48
+  - enable: 0
+    sib: 8
+    width: 68
+  - enable: 0
+    sib: 7
+    width: 68
+  - enable: 1
+    sib: -1
+    width: 16
+  - enable: 0
+    sib: 9
+    width: 68
+  - enable: 0
+    sib: 10
+    width: 68
+  - enable: 0
+    sib: 11
+    width: 68
+  - enable: 0
+    sib: 12
+    width: 68
+  - enable: 0
+    sib: 13
+    width: 68
+  - enable: 0
+    sib: 14
+    width: 68
+  - enable: 0
+    sib: 15
+    width: 68
+  - enable: 0
+    sib: 16
+    width: 68
+  - enable: 0
+    sib: 17
+    width: 68
+  lastIconSelect: []
+  lasHiglightColorSelect: []
+  listKey: []
+  listValue: []
+  listValueNew: []
+  WasCustomNewApply: 1
+  _mFavoritWindowParams_keys: 
+  _mFavoritWindowParams_values: []
+  PRESETS_DATA: 
+  PRESETS_SCROLL_CAT: 0
+  PRESETS_SCROLL_PRES: 0
+  PRESETS_SELECT: 0
+  WAS_NEW_INIT: 1
+  USE_REGISTRATOR: 0
+  prop_m_DataKeeper_Values: []

@@ -32,7 +32,7 @@ public class LoginUIManager : MonoBehaviour {
 		ToggleForgot();
 	}
 
-	private void AnimateSigninGroup() {
+	public void AnimateSigninGroup() {
 		AppLogo.DOAnchorPosY(LogoPositionInSignin, SpeedToAnimate);
 		ToggleSignin();
 		if (isSignupShowed) {
