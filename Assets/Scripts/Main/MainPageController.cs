@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using CI.HttpClient;
 
 public class MainPageController : MonoBehaviour {
 
@@ -59,6 +60,8 @@ public class MainPageController : MonoBehaviour {
 
 	public Sprite ProfilePicture;
 	public Sprite PhotoPicture;
+
+	private byte[] imageUpload;
 
 	private MainPage_UIManager UIManager;
 	private float timeToCloseApp = 0;
@@ -374,8 +377,9 @@ public class MainPageController : MonoBehaviour {
 		// StartCoroutine();
 	}
 	public void OnClick_AddNew() {
-		StartCoroutine(AddBookAPI(action=> {
+		StartCoroutine(AddBookAPI(()=> {
 			UIManager.HideAddNew();
+			AddNew_Photo.sprite = PhotoPicture;
 		}));
 	}
 	public void OnClick_AddPicture() {
@@ -384,10 +388,12 @@ public class MainPageController : MonoBehaviour {
 				_path = path;
 				AddNew_BookName.text = _path;
 				Texture2D texture = NativeGallery.LoadImageAtPath( path, 1024 );
+				texture.Apply();
 				if( texture == null ) {
 					Debug.Log( "Couldn't load texture from " + path );
 					return;
 				}
+				imageUpload = texture.EncodeToPNG();
 				AddNew_Photo.sprite = Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f);
 			}
 		}, "Select a PNG image");
@@ -520,21 +526,21 @@ public class MainPageController : MonoBehaviour {
 		yield return request.SendWebRequest();
 		callBack(request);
 	}
-	private IEnumerator AddBookAPI(Action<UnityWebRequest> callBack) {
-		var form = new BookUpload(){
-			bookImage = AddNew_Photo.sprite.texture.GetRawTextureData(),
-			book_name = AddNew_BookName.text,
-			description = AddNew_Description.text
-		};
-
-		var request = new UnityWebRequest($"{Config.URL()}/books/upload", "POST");
-		var bodyRaw = new UTF8Encoding().GetBytes(JsonUtility.ToJson(form));
-		request.uploadHandler = new UploadHandlerRaw(bodyRaw);
-		request.downloadHandler = new DownloadHandlerBuffer();
-		request.SetRequestHeader("x-auth", PlayerPrefs.GetString("token"));
-		request.SetRequestHeader("Content-Type", "application/form-data");
-		yield return request.SendWebRequest();
-		callBack(request);
+	private IEnumerator AddBookAPI(Action callBack) {
+		var client = new HttpClient();
+		client.Headers.Add("x-auth", PlayerPrefs.GetString("token"));
+		client.Headers.Add("book_name", AddNew_BookName.text);
+		client.Headers.Add("description", AddNew_Description.text);
+		var multipartFormDataContent = new MultipartFormDataContent();
+		multipartFormDataContent.Add(new ByteArrayContent(imageUpload, "application/octet-stream"), "bookImage", "image.png");
+		
+		client.Post(new Uri($"{Config.URL()}/books/upload"), multipartFormDataContent, HttpCompletionOption.AllResponseContent, r =>
+		{
+		}, (u) =>
+		{
+		});
+		yield return new WaitForEndOfFrame();
+		callBack();
 	}
 	private IEnumerator SentOfferAPI(offerData data, Action<UnityWebRequest> callBack) {
 		var request = new UnityWebRequest($"{Config.URL()}/offer", "POST");

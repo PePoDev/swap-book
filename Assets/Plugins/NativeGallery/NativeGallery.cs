@@ -502,7 +502,7 @@ public static class NativeGallery
 		String extension = Path.GetExtension( imagePath ).ToLowerInvariant();
 		TextureFormat format = ( extension == ".jpg" || extension == ".jpeg" ) ? TextureFormat.RGB24 : TextureFormat.RGBA32;
 
-		Texture2D result = new Texture2D( 2, 2, format, generateMipmaps, linearColorSpace );
+		Texture2D result = new Texture2D( 2, 2, format, false);
 
 		try
 		{
